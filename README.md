@@ -1,23 +1,46 @@
 # FoodApp
 
-FoodApp is designed to help users plan and manage their meals efficiently by solving two key problems:
-1. Ensuring you buy the right amount of food for the recipes you want to prepare.
-2. Reducing food waste by showing recipes along with their required ingredients.
+FoodApp is a mobile application designed to help users:
+1. Purchase the correct amount of food for recipes.
+2. Reduce food waste by displaying recipes and associated ingredients.
 
 ## Features
+- **Recipe Management**: View and manage recipes.
+- **Ingredient Tracking**: Plan and track the ingredients needed.
+- **Sustainability Focus**: Reduce food waste by aligning shopping and cooking.
 
-- **Recipe Management**: View and manage a collection of recipes.
-- **Ingredient Tracking**: Keep track of the ingredients needed for your selected recipes.
-- **Food Waste Reduction**: Plan meals effectively to minimize leftover and wasted food.
+## Tech Stack
+- **Backend**: Python (Flask/FastAPI)
+- **Frontend**: React Native
+- **Database**: SQLite/PostgreSQL
 
-## Purpose
+## Directory Structure
 
-The goal of FoodApp is to make meal planning easier and more efficient while promoting sustainability by reducing food waste.
-
-## Getting Started
-
-Follow these steps to set up and run the application:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Nicholas26-design/FoodApp.git
+```
+FoodApp
+├── backend
+│   ├── app
+│   │   ├── __init__.py
+│   │   ├── routes.py
+│   │   ├── models.py
+│   │   └── utils.py
+│   ├── migrations
+│   ├── tests
+│   ├── requirements.txt
+│   └── app.py
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── screens
+│   │   ├── services
+│   │   └── App.js
+│   └── package.json
+├── database
+│   ├── schema.sql
+│   ├── seeds.sql
+│   └── db.sqlite
+├── docker-compose.yml
+├── .env
+├── .gitignore
+└── README.md
+```

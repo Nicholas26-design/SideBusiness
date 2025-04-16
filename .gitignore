@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.sqlite3
 
 # C extensions
 *.so
@@ -172,3 +173,18 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Virtual environment
+venv/
+env/
+
+# Database
+*.db
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Additional ignores
+node_modules/
+db.sqlite

@@ -26,3 +26,18 @@ end product: 3 tiers of services.
 Bronze: batch analytics
 Silver: real-time analytics
 Gold: predictive analytics
+
+
+Data Sources (Kafka, Kinesis, API, DB)
+        │
+        ▼
+   Apache Flink
+ (streaming ETL)
+        │
+        ▼
+    Delta Lake
+ (Bronze → Silver → Gold)
+        │
+        ▼
+   Downstream consumers
+ (e.g. Databricks SQL, Power BI)
